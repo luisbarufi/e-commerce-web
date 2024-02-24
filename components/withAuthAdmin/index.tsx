@@ -5,7 +5,6 @@ import Cookie from 'js-cookie';
 import AuthState from '../../dtos/AuthState';
 import User from '../../dtos/User';
 import ApiData from '../../dtos/ApiData';
-import { Component } from 'react';
 
 const withAuthAdmin = (Component) => {
   const Auth = (props) => {
@@ -21,14 +20,14 @@ const withAuthAdmin = (Component) => {
       router.push('/Auth/Login')
     }
 
-    return ;
+    return <Component {...props} />;
+  }
+
+  if(Component.getServerSideProps) {
+    Auth.getServerSideProps = Component.getServerSideProps;
   }
 
   return Auth;
 }
 
-if(Component.getServerSideProps) {
-  Auth.getServerSideProps = Component.getServerSideProps;
-}
-
-export default withAuthAdmin();
+export default withAuthAdmin;
