@@ -6,7 +6,7 @@ const Login: React.FC = () => {
   return (
     <MainComponent>
       <div className="p-4 text-center">
-        <h2>Entrar</h2>
+        <br />
 
         <LoginForm titlePhrase="Acessar minha conta" buttonPhrase="ACESSAR" />
         <br />
