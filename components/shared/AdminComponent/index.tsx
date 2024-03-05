@@ -1,12 +1,13 @@
 import { Col, Row } from 'react-bootstrap';
 import AdminHeader from '../Header/AdminHeader';
 import AdminFooter from '../AdminFooter';
+import LateralMenu from '../LateralMenu';
 
 const AdminComponent: React.FC = ({ children }) => {
   return (
     <Row className="mr-lg-4">
       <Col lg={3}>
-        Menu Lateral
+        <LateralMenu />
       </Col>
 
       <Col lg={9}>
