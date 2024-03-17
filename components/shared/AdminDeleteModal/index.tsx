@@ -1,7 +1,7 @@
 import { Modal, Row, Col } from 'react-bootstrap';
 import { faTrash, faTimes } from '@fortawesome/free-solid-svg-icons';
 import styles from '../../../styles/AdminPanel.module.css';
-import StyledButton from '../TitleAdminPanel/StyledButton';
+import StyledButton from '../StyledButton';
 
 interface AdminDeleteModalProps {
   show: boolean,

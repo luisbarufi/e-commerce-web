@@ -3,7 +3,7 @@ import Meta from '../../../dtos/Meta';
 import PaginationService from '../../../util/PaginationService';
 
 import { useRouter } from 'next/router';
-import StyledButton from '../TitleAdminPanel/StyledButton';
+import StyledButton from '../StyledButton';
 
 const Pagination: React.FunctionComponent<Meta> = ({ page, length, total, total_pages }) => {
   const [pagination, setPagination] = useState(['1']);

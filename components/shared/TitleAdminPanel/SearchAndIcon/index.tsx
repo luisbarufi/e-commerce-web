@@ -2,7 +2,7 @@ import { InputGroup, FormControl, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import styles from '../../../../styles/AdminTitle.module.css';
-import StyledButton from '../StyledButton';
+import StyledButton from '../../StyledButton';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 interface SearchAndIcon {
