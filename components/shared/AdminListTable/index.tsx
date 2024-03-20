@@ -1,7 +1,7 @@
 import { Table } from 'react-bootstrap';
 import styles from '../../../styles/AdminPanel.module.css';
-import Meta from '../../../../dtos/Meta';
-import Pagination from '../../Pagination';
+import Meta from '../../../dtos/Meta';
+import Pagination from '../Pagination';
 
 interface AdminListTableProps {
   first_title: String,
